@@ -12,7 +12,7 @@ function addToList(textVal){
     child.style.fontVariant = "small-caps";
     child.textContent = textVal; //either .innerText or .textContent
     child.style.backgroundColor = "transparent";
-    
+
     array.push(textVal);
     parent.appendChild(child);
     child.addEventListener('click', () => { //select on the task

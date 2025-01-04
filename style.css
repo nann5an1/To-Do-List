@@ -4,7 +4,7 @@
 }
 .main-bg{
     background-color: rgba(157, 216, 255, 0.852);
-    width: 30vw;
+    width: 40vw;
     height:90vh;
     justify-content: center;
     align-items: center;
@@ -70,6 +70,94 @@
 }
 #output-div{
     background-color: transparent;
+}
+
+
+@media screen and (max-width: 1124px) {
+    .main-bg {
+        width: 60vw;
+        height: 80vh;
+        margin: 5vh auto;
+    }
+    #bg-fieldset {
+        width: 50vw;
+        height: 70vh;
+        padding: 1.5rem;
+    }
+    #output-fieldset{
+        width: 45vw;
+        height: 50vh;
+        padding: 1rem;
+    }
+    .btn{
+        width: 6rem;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-bg {
+        width: 80vw;
+        height: 80vh;
+        margin: 5vh auto;
+    }
+    #bg-fieldset {
+        width: 70vw;
+        height: 70vh;
+        padding: 1.5rem;
+    }
+    #output-fieldset{
+        width: 70vw;
+        height: 50vh;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-bg {
+        width: 80vw;
+        height: 80vh;
+        margin: 2vh auto;
+    }
+    #bg-fieldset {
+        width: 50vw;
+        height: 70vh;
+        padding: 1rem;
+    }
+    #output-fieldset{
+        width: auto;
+        height: 50vh;
+        padding: 1rem;
+    }
+    .btn{
+        width: 2.5rem;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-bg {
+        width: 84vw;
+        height: 60vh;
+        /* margin: 2vh auto; */
+    }
+    #bg-fieldset {
+        width: 22vw;
+        height: 50vh;
+        /* padding: 1rem; */
+    }
+    #output-fieldset{
+        width: 60vw;
+        height: 35vh;
+        /* padding: 1rem; */
+    }
+    .btn{
+        width: 2.5rem;
+        font-size: small;
+    }
+    #input-text{
+        width: 10rem;
+    }
 }
 
 /*why??*/
