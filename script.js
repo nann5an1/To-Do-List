@@ -2,6 +2,7 @@ const addBtn = document.getElementById("add-btn");
 const delBtn = document.getElementById("del-btn");
 const input = document.querySelector("#input-text");
 const parent = document.getElementById("output-div");
+const out = document.getElementById("out");
 let array = [];
 let selectedChild = null;
 
@@ -15,6 +16,8 @@ function addToList(textVal){
 
     array.push(textVal);
     parent.appendChild(child);
+    if(textVal)
+        localStorage.setItem("stored-input", textVal); //"stored-input" is the key and textVal is the value , key-value pair
     child.addEventListener('click', () => { //select on the task
         selectedChild = child;
         child.style.color = "red";
@@ -37,6 +40,8 @@ function handleKeyEnter(event){
         addToList(input.value);
     }
 }
+
+// out.innerText = localStorage.getItem("stored-input");
 document.addEventListener('keydown', () => handleKeyEnter(event));
 addBtn.addEventListener('click', () => addToList(input.value));
 delBtn.addEventListener('click', () => delFromList());
